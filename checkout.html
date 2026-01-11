@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food delivery checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Checkout-card">
+        <div class="checkout-header">
+            <h3>Final Checkout</h3>
+            <p id="est-time">Estimated Delivery: 30-40 mins</p>
+        </div>
+        <div id="order-items-list" class="items-container">
+        </div>
+
+        <div class="extra-info">
+            <label>Specia Instructions:</label>
+            <textarea placeholder="e.g. No onion, make it spicy...."></textarea>
+        </div>
+        
+        <div class="promo-section">
+            <input type="text" id="promo-input" placeholder="Enter Promo code">
+            <button onclick="applyPromo()">Apply</button>
+        </div>
+        <hr>
+        <div class="bill-section">
+         <div class="bill-row">
+        <span>Subtotal</span>
+        <span id="subtotal">Rs.0</span>
+         </div>
+         <div class="bill-row">
+            <span>Delivery Fee</span>
+            <span>Rs.100</span>
+         </div>
+         <div class="bill-row tax">
+            <span>GST(13%)</span>
+            <span id="tax">Rs.0</span>
+         </div>
+         <div class="bill-row discount" id="discount-row" style = "display: none" color: green;>
+            <span>Discount(PROMO)</span>
+            <span id="discount-val">-Rs.0</span>
+         </div>
+
+         <div class="bill-row grand-total">
+            <strong>Total amount</strong>
+            <strong id="total">Rs.0</strong>
+         </div>
+         
+        </div>
+        <button class="confirm-btn"onclick="placeOrder()">Place Order</button>
+        
+       <div id="tracking-section">
+       <h4>Order Status</h4>
+    <p id="status-text">Finding a rider...</p>
+
+    <div class="progress-container">
+    <div id="progress-bar"></div>
+    </div>
+    <p class="timer-text">Estimated Arrival: <span id="timer">02:00</span> mins</p>
+</div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

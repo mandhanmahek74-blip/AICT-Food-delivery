@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KFC Menu</title>
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+
+<h2>KFC Menu</h2>
+
+<div class="menu-container">
+<div class="card">
+    Zinger Burger: Rs. 560
+    <button onclick="addToCart('Zinger Burger',560)">Add to Cart</button><br><br>
+    <img src="zingeratha.jpg" alt="Zinger Burger">
+</div>
+
+<div class="card">
+    Zinger Stacker: Rs. 890
+    <button onclick="addToCart('mighty zinger',890)">Add to Cart</button><br><br>
+    <img src="mighty zinger.webp" alt="mighty zinger">
+</div>
+
+<div class="card">
+    Rice & Spice: Rs. 350
+    <button onclick="addToCart('Rice & Spice',350)">Add to Cart</button><br><br>
+    <img src="rice and spice.jpg" alt="Rice and Spice">
+</div>
+
+<div class="card">
+    Boneless Strips (3 Pcs): Rs. 450
+    <button onclick="addToCart('Boneless Strips 3 Pcs',450)">Add to Cart</button><br><br>
+    <img src="boneless strips.jpg" alt="Boneless Strips">
+</div>
+
+<div class="card">
+    Family Bucket: Rs. 2450
+    <button onclick="addToCart('Family Bucket',2450)">Add to Cart</button><br><br>
+    <img src="family bucket.jpg" alt="Family Bucket">
+</div>
+
+<div class="card">
+    Crispy Chicken (2 Pcs): Rs. 560
+    <button onclick="addToCart('Crispy Chicken 2 Pcs',560)">Add to Cart</button><br><br>
+    <img src="crispy chicken 2pc.jpg" alt="Crispy Chicken">
+</div>
+
+<div class="card">
+    Crispy Chicken (4 Pcs): Rs. 1050
+    <button onclick="addToCart('Crispy Chicken 4 Pcs',1050)">Add to Cart</button><br><br>
+    <img src="crispy chicken 4 pc.jpg" alt="Crispy Chicken 4 Pcs">
+</div>
+
+<div class="card">
+    Twister Roll: Rs. 420
+    <button onclick="addToCart('Twister Roll',420)">Add to Cart</button><br><br>
+    <img src="twister roll.jpg" alt="Twister Roll">
+</div>
+
+<div class="card">
+    Zingeratha: Rs. 360
+    <button onclick="addToCart('Zingeratha',360)">Add to Cart</button><br><br>
+    <img src="zingeratha.jpg" alt="Zingeratha">
+</div>
+
+<div class="card">
+    Corn on the Cob: Rs. 250
+    <button onclick="addToCart('Corn on the Cob',250)">Add to Cart</button><br><br>
+    <img src="corn.jpg" alt="Corn on the Cob">
+</div>
+
+<div class="card">
+    Fries (Regular): Rs. 220
+    <button onclick="addToCart('Fries Regular',220)">Add to Cart</button><br><br>
+    <img src="regular fries.jpg" alt="Fries Regular">
+</div>
+
+<div class="card">
+    Fries (Large): Rs. 350
+    <button onclick="addToCart('Fries Large',350)">Add to Cart</button><br><br>
+    <img src="large fries.jpg" alt="Fries Large">
+</div>
+
+<div class="card">
+    Coleslaw: Rs. 120
+    <button onclick="addToCart('Coleslaw',120)">Add to Cart</button><br><br>
+    <img src="coleslaw.jpg" alt="Coleslaw">
+</div>
+
+<div class="card">
+    Chocolate Lava Cake: Rs. 290
+    <button onclick="addToCart('Chocolate Lava Cake',290)">Add to Cart</button><br><br>
+    <img src="lava cake.jpg" alt="Chocolate Lava Cake">
+</div>
+
+<div class="card">
+    1.5L Drink: Rs. 280
+    <button onclick="addToCart('1.5L Drink',280)">Add to Cart</button><br><br>
+    <img src="drink.jpg" alt="1.5L Drink">
+</div>
+
+    <br>
+    <a href="checkout.html"><button>Go to Checkout</button></a>
+</div>
+
+<script>
+function addToCart(name, price){
+    // Get current cart
+    let cart = localStorage.getItem('cart') || '';
+    
+    // Add new item as "name-price,"
+    cart += name + '-' + price + ',';
+    
+    // Save back to localStorage
+    localStorage.setItem('cart', cart);
+
+    alert(name + " added to cart!");
+}
+</script>
+
+</body>
+</html>

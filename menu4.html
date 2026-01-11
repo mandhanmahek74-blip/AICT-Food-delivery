@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="project.css">
+
+</head>
+<body>
+    <div class="menu-container">
+    <h3>Chilleez (Desi & Fusion)</h3>
+    <div class="card">
+        Chicken Tikka (Single): Rs. 680
+        <button onclick="addToCart('Chicken Tikka (Single)', 680)">Add to Cart</button><br><br>
+        <img src="chicken tikka.jpg">
+    </div>
+
+    <div class="card">
+        BBQ Malai Club Sandwich: Rs. 880
+        <button onclick="addToCart('BBQ Malai Club Sandwich',  880)">Add to Cart</button><br><br>
+        <img src="club sandwich.jpeg">
+    </div>
+
+    <div class="card">
+       Chicken Manchurian with Rice: Rs. 850
+        <button onclick="addToCart('Chicken Manchurian with Rice', 850)">Add to Cart</button><br><br>
+        <img src="chicken manuchurian.jpg">
+    </div>
+
+    <div class="card">
+       Jumbo Steak Burger: Rs. 1,210
+        <button onclick="addToCart('Jumbo Steak Burger', 1,210)">Add to Cart</button><br><br>
+        <img src="jumbo burger.webp">
+    </div>
+
+  <div class="card">
+   Chicken Chowmein: Rs. 750
+   <button onclick="addToCart('Chicken Chowmein', 750)">Add to Cart</button><br><br>
+   <img src="chowmein.jpg">
+</div>
+
+<div class="card">
+   Crispy Zinger Burger: Rs. 520
+   <button onclick="addToCart('Crispy Zinger Burger', 520)">Add to Cart</button><br><br>
+   <img src="zinger.jpg">
+</div>
+
+<div class="card">
+   Crispy Broast: Rs. 580
+   <button onclick="addToCart('Crispy Broast', 580)">Add to Cart</button><br><br>
+   <img src="broast.jpg">
+</div>
+
+<div class="card">
+   Chicken Fried Rice: Rs. 780
+   <button onclick="addToCart('Chicken Fried Rice', 780)">Add to Cart</button><br><br>
+   <img src="fried rice.jpg">
+</div>
+
+<div class="card">
+   BBQ Platter: Rs. 1,250
+   <button onclick="addToCart('BBQ Platter', 1250)">Add to Cart</button><br><br>
+   <img src="bbqplatter.jpg">
+</div>
+
+<div class="card">
+   Beef Seekh Kabab: Rs. 450
+   <button onclick="addToCart('Beef Seekh Kabab', 450)">Add to Cart</button><br><br>
+   <img src="seekh.jpg">
+</div>
+
+<div class="card">
+   Chicken Roll Paratha: Rs. 350
+   <button onclick="addToCart('Chicken Roll Paratha', 350)">Add to Cart</button><br><br>
+   <img src="roll.jpg">
+</div>
+
+<div class="card">
+   Crunchy Pizza Slice: Rs. 390
+   <button onclick="addToCart('Crunchy Pizza Slice', 390)">Add to Cart</button><br><br>
+   <img src="pizzaslice.jpg">
+</div>
+
+<div class="card">
+   Alfredo Pasta: Rs. 950
+   <button onclick="addToCart('Alfredo Pasta', 950)">Add to Cart</button><br><br>
+   <img src="pasts.jpg">
+</div>
+
+<div class="card">
+   French Fries: Rs. 250
+   <button onclick="addToCart('French Fries', 250)">Add to Cart</button><br><br>
+   <img src="fries.jpg">
+</div>
+
+<div class="card">
+   Grilled Sandwich: Rs. 680
+   <button onclick="addToCart('Grilled Sandwich', 680)">Add to Cart</button><br><br>
+   <img src="grilled sandwich.jpg">
+</div>
+
+    <a href="checkout.html">
+        <button>Go to Checkout</button>
+    </a>
+</div>
+
+<script>
+function addToCart(name, price){
+    // Get current cart
+    let cart = localStorage.getItem('cart') || '';
+    
+    // Add new item as "name-price,"
+    cart += name + '-' + price + ',';
+    
+    // Save back to localStorage
+    localStorage.setItem('cart', cart);
+
+    alert(name + " added to cart!");
+}
+</script>
+</div>
+</body>
+</html>

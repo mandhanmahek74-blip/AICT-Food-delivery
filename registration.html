@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Food Delivery - Registration</title>
+
+<style>
+body { 
+  font-family: Arial, sans-serif; 
+  background: #f7f7f7;
+  margin: 0;
+}
+.container { 
+  max-width: 480px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+h2 { 
+  margin-top: 0;
+  text-align: center;
+}
+label { 
+  display: block;
+  margin-top: 12px;
+}
+input, select, textarea { 
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+button { 
+  margin-top: 18px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  font-size: 16px;
+  background: black;
+  color: white;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+<h2>Foodio Services</h2>
+
+<form action="thankyou.html" method="GET">
+
+<label>Full Name</label>
+<input type="text" name="fullname" required>
+
+<label>Email</label>
+<input type="email" name="email" required>
+
+<label>Phone Number</label>
+<input type="tel" name="phone" required>
+
+<label>Password</label>
+<input type="password" name="password" required>
+
+<label>Karachi</label>
+<select name="area" required>
+<option value="">Select area</option>
+<option>saddar</option>
+<option>clifton block 9</option>
+<option>clifton block 8</option>
+<option>clifton block 7</option>
+<option>clifton block 6</option>
+<option>clifton block 5</option>
+<option>clifton block 4</option>
+<option>clifton block 3</option>
+<option>clifton block 2</option>
+<option>clifton block 1</option>
+<option>korangi</option>
+<option>north nazimabad</option>
+<option>DHA Phase 8</option>
+<option>DHA Phase 7</option>
+<option>DHA Phase 6</option>
+<option>DHA Phase 5</option>
+<option>DHA Phase 4</option>
+<option>DHA Phase 2</option>
+<option>DHA Phase 1</option>
+
+
+
+</select>
+
+<label>Delivery Address</label>
+<textarea name="address" rows="3" required></textarea>
+
+<label>Flat Number</label>
+<input type="number" name="flat" required>
+
+<button type="submit">Register</button>
+</form>
+</div>
+
+<script>
+// Save form data before going to thankyou page
+document.querySelector("form").addEventListener("submit", function() {
+  localStorage.setItem("fullname", document.querySelector('input[name="fullname"]').value);
+  localStorage.setItem("email", document.querySelector('input[name="email"]').value);
+  localStorage.setItem("phone", document.querySelector('input[name="phone"]').value);
+  localStorage.setItem("area", document.querySelector('select[name="area"]').value);
+  localStorage.setItem("address", document.querySelector('textarea[name="address"]').value);
+  localStorage.setItem("flat", document.querySelector('input[name="flat"]').value);
+ // Redirect to Thank You page
+    window.location.href = "thankyou.html";
+});
+</script>
+
+</body>
+</html>

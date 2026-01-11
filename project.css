@@ -1,0 +1,263 @@
+/* RESET */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* BODY */
+body{
+    background:#ffffff;
+}
+
+/* HEADER / NAVBAR */
+header{
+    width:100%;
+    background:#b9b5b5;
+    display:flex;
+    align-items:center;
+    padding:0;
+}
+
+.nav{
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:30px 20px;
+}
+
+.nav ul{
+    display:flex;
+    list-style:none;
+    gap:20px;
+}
+
+.nav ul li a{
+    color:#000;
+    text-decoration:none;
+    font-size:17px;
+    font-weight:bold;
+}
+
+button{
+    padding:10px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    font-weight:bold;
+    border:none;
+}
+
+
+/* TITLES */
+h1{
+    margin:20px;
+}
+
+h2,h3{
+    text-align:center;
+    margin:20px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:600;
+}
+
+/* RESTAURANT DISPLAY (HOME) */
+.restaurant-section{
+    padding:50px 20px;
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:2rem;
+}
+
+/* CARD CONTAINER */
+.container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+    margin-bottom:40px;
+}
+
+/* RESTAURANT + MENU CARD */
+.card{
+    background:white;
+    width:260px;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0px 5px 15px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+    padding-bottom:15px;
+}
+
+.card:hover{
+    transform:translateY(-7px);
+}
+
+/* CARD IMAGE */
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:contain;
+    padding:15px;
+    background:#fafafa;
+}
+
+/* CARD TEXT */
+.card-info{
+    padding:15px;
+}
+
+.card-info h3{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+/* MENU BUTTON */
+.menu-btn{
+    display:inline-block;
+    background:#e74c3c;
+    color:white;
+    text-decoration:none;
+    padding:10px;
+    border-radius:8px;
+    font-size:0.9rem;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+.menu-btn:hover{
+    background:#333;
+}
+
+/* ADD TO CART BUTTON */
+button.addCart{
+    background:#e74c3c;
+    color:white;
+    margin-top:10px;
+}
+
+/* GENERIC BUTTON HOVER */
+button:hover{
+    opacity:0.9;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn{
+    background:#009900;
+    color:white;
+    padding:12px 18px;
+    border-radius:7px;
+    font-size:15px;
+}
+.checkout-btn:hover{
+    background:#006600;
+}
+/* ======================
+   MENU PAGE CONTAINER
+====================== */
+.menu-container {
+    display: flex;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 10px;
+    margin-top: 10px;
+}
+
+/* ======================
+   MENU PAGE CARDS
+====================== */
+.menu-container .card {
+    width: 260px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.menu-container .card:hover {
+    transform: translateY(-7px);
+}
+/* ======================
+   MENU PAGE IMAGES
+====================== */
+
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+
+.menu-container .card{
+    padding: 20%;
+    background: #fafafa;
+    border-radius: 12px;
+    text-align: center;
+}
+
+.menu-container .card img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+/* ======================
+   ADD TO CART BUTTON
+====================== */
+.menu-container button {
+    background: #e74c3c;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    font-size: 14px;
+    border-radius: 7px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-container button:hover {
+    background: #333;
+}
+
+/* ======================
+   GO TO CHECKOUT BUTTON
+====================== */
+.menu-container .checkout-btn {
+    background: #28a745;
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+.menu-container .checkout-btn:hover {
+    background: #1d7d31;
+}
+
+/* ======================
+   RESPONSIVE
+====================== */
+@media(max-width:768px) {
+    .menu-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-container .card {
+        width: 90%;
+    }
+}

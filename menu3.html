@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menu</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="menu-container">
+    <h3>Casa Villa (Fine Dining / Western)</h3>
+    <div class="card">
+        Angus Mushroom Steak: Rs. 2,200
+        <button onclick="addToCart('Angus Mushroom Steak', 2,200)">Add to Cart</button><br><br>
+        <img src="angus mashroom.jpg">
+    </div>
+
+    <div class="card">
+        Chicken Alfredo Pasta: Rs. 890
+        <button onclick="addToCart('Chicken Alfredo Pasta', 890)">Add to Cart</button><br><br>
+        <img src="chicken alferdo pasta.jpg">
+    </div>
+
+    <div class="card"> 
+        Fried Calamari (Appetizer): Rs. 750
+        <button onclick="addToCart('Fried Calamari (Appetizer)', 750)">Add to Cart</button><br><br>
+        <img src="fried calamari.jpg">
+    </div>
+
+    <div class="card">
+       Chocolate Lava Cake: Rs. 550
+        <button onclick="addToCart('Chocolate Lava Cake', 550)">Add to Cart</button><br><br>
+        <img src="lava cake.jpg">
+    </div>
+
+    <div class="card">
+   Pepperoni Flatbread: Rs. 990
+   <button onclick="addToCart('Pepperoni Flatbread', 990)">Add to Cart</button><br><br>
+   <img src="flat brad.jpg">
+</div>
+
+<div class="card">
+   Mushroom Risotto: Rs. 1,320
+   <button onclick="addToCart('Mushroom Risotto', 1320)">Add to Cart</button><br><br>
+   <img src="risotto.jpg">
+</div>
+
+<div class="card">
+   Smoked BBQ Ribs: Rs. 2,850
+   <button onclick="addToCart('Smoked BBQ Ribs', 2850)">Add to Cart</button><br><br>
+   <img src="bbq ribs.jpg">
+</div>
+
+<div class="card">
+   Beef Carpaccio: Rs. 1,450
+   <button onclick="addToCart('Beef Carpaccio', 1450)">Add to Cart</button><br><br>
+   <img src="carpaccio.jpg">
+</div>
+
+<div class="card">
+   Prawn Tempura: Rs. 1,250
+   <button onclick="addToCart('Prawn Tempura', 1250)">Add to Cart</button><br><br>
+   <img src="tempura.jpg">
+</div>
+
+<div class="card">
+   Smoky Chicken Wings: Rs. 780
+   <button onclick="addToCart('Smoky Chicken Wings', 780)">Add to Cart</button><br><br>
+   <img src="wings.jpg">
+</div>
+
+<div class="card">
+   Caprese Salad: Rs. 720
+   <button onclick="addToCart('Caprese Salad', 720)">Add to Cart</button><br><br>
+   <img src="carprese.jpg">
+</div>
+
+<div class="card">
+   Lobster Thermidor: Rs. 4,200
+   <button onclick="addToCart('Lobster Thermidor', 4200)">Add to Cart</button><br><br>
+   <img src="lobster.jpg">
+</div>
+
+<div class="card">
+   Beef Lasagna: Rs. 1,650
+   <button onclick="addToCart('Beef Lasagna', 1650)">Add to Cart</button><br><br>
+   <img src="lasagna.jpg">
+</div>
+
+<div class="card">
+   Buttermilk Fried Chicken: Rs. 1,280
+   <button onclick="addToCart('Buttermilk Fried Chicken', 1280)">Add to Cart</button><br><br>
+   <img src="butter milk chicken.jpg">
+</div>
+
+<div class="card">
+   Pan Seared Scallops: Rs. 3,100
+   <button onclick="addToCart('Pan Seared Scallops', 3100)">Add to Cart</button><br><br>
+   <img src="scallops.jpg">
+</div>
+
+<div class="card">
+   French Onion Soup: Rs. 620
+   <button onclick="addToCart('French Onion Soup', 620)">Add to Cart</button><br><br>
+   <img src="onion soup.jpg">
+</div>
+
+<div class="card">
+   Classic Apple Pie: Rs. 540
+   <button onclick="addToCart('Classic Apple Pie', 540)">Add to Cart</button><br><br>
+   <img src="apple pie.jpg">
+</div>
+
+<div class="card">
+   Creme Brulee: Rs. 690
+   <button onclick="addToCart('Creme Brulee', 690)">Add to Cart</button><br><br>
+   <img src="brulee.jpg">
+</div>
+
+<div class="card">
+   Iced Peach Tea: Rs. 370
+   <button onclick="addToCart('Iced Peach Tea', 370)">Add to Cart</button><br><br>
+   <img src="peach tea.jpg">
+</div>
+
+
+    <a href="checkout.html">
+        <button>Go to Checkout</button>
+    </a>
+</div>
+
+<script>
+function addToCart(name, price){
+    // Get current cart
+    let cart = localStorage.getItem('cart') || '';
+    
+    // Add new item as "name-price,"
+    cart += name + '-' + price + ',';
+    
+    // Save back to localStorage
+    localStorage.setItem('cart', cart);
+
+    alert(name + " added to cart!");
+}
+</script>
+</div>
+</body>
+</html>
