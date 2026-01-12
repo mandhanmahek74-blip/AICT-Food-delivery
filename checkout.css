@@ -90,7 +90,7 @@
     background: blueviolet;
 }
 #tracking-section {
-    display: none;
+    display: block;
     margin-top: 20px;
     padding: 15px;
     background: #fdf2f8;

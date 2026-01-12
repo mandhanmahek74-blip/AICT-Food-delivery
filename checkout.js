@@ -79,6 +79,6 @@ function placeOrder(){
     // Clear current cart
     localStorage.removeItem('cart');
 
-    // Redirect to registration page
-    window.location.href = "registration.html";
+    document.getElementById('tracking-section').style.display = 'block';
+startTracking();
 }
