@@ -81,4 +81,31 @@ function placeOrder(){
 
     document.getElementById('tracking-section').style.display = 'block';
 startTracking();
+
+
+function startTracking() {
+    let progressBar = document.getElementById('progress-bar');
+    let statusText = document.getElementById('status-text');
+    let width = 10; 
+
+    
+    let interval = setInterval(() => {
+        if (width >= 100) {
+            clearInterval(interval); 
+            statusText.innerText = "Order Delivered! Enjoy your meal 🍴";
+        } else {
+            width += 30; 
+            progressBar.style.width = width + '%';
+
+           
+            if (width === 40) {
+                statusText.innerText = "Chef is preparing your food... ";
+            } else if (width === 70) {
+                statusText.innerText = "Rider is picking up your order...";
+            } else if (width >= 100) {
+                statusText.innerText = "Rider is near your location!";
+            }
+        }
+    }, 2000); 
+}
 }
