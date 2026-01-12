@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>McDonald's Menu</title>
-    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -17,116 +17,116 @@
     <div class="card">
         Big Mac: Rs. 850
         <button onclick="addToCart('Big Mac', 850)">Add to Cart</button><br><br>
-        <img src="big mac.png">
+        <img src="big mac.png.jpeg">
     </div>
 
     <div class="card">
         McChicken Burger: Rs. 410
         <button onclick="addToCart('McChicken Burger', 410)">Add to Cart</button><br><br>
-        <img src="mcChicken burger.webp">
+        <img src="mc.png.jpeg">
     </div>
 
     <div class="card">
         Chicken McNuggets (6 Pcs): Rs. 410
         <button onclick="addToCart('Chicken McNuggets 6 Pcs', 410)">Add to Cart</button><br><br>
-        <img src="chicken mcNuggets.png">
+        <img src="chicken.png.jpeg">
     </div>
 
     <div class="card">
         Zingeratha: Rs. 390
         <button onclick="addToCart('Zingeratha', 390)">Add to Cart</button><br><br>
-        <img src="zingeratha.jpg">
+        <img src="mc zingeratha.png.jpeg">
     </div>
 
     
     <div class="card">
         Double Big Mac: Rs. 1150
         <button onclick="addToCart('Double Big Mac', 1150)">Add to Cart</button><br><br>
-        <img src="double bog mac.jpg">
+        <img src="double.png.jpeg">
     </div>
 
     <div class="card">
         McDouble: Rs. 520
         <button onclick="addToCart('McDouble', 520)">Add to Cart</button><br><br>
-        <img src="mcdouble.jpg">
+        <img src="mc double.png">
     </div>
 
     <div class="card">
         Filet-O-Fish: Rs. 590
         <button onclick="addToCart('Filet-O-Fish', 590)">Add to Cart</button><br><br>
-        <img src="filet o fish.jpg">
+        <img src="filet.png">
     </div>
 
     <div class="card">
         Quarter Pounder: Rs. 780
         <button onclick="addToCart('Quarter Pounder', 780)">Add to Cart</button><br><br>
-        <img src="quater pounder.jpg">
+        <img src="quater.png">
     </div>
 
     <div class="card">
         Quarter Pounder With Cheese: Rs. 920
         <button onclick="addToCart('Quarter Pounder With Cheese', 920)">Add to Cart</button><br><br>
-        <img src="quater ponder with cheese.webp">
+        <img src="ponder.png">
     </div>
 
     <div class="card">
         Chicken McCrispy: Rs. 630
         <button onclick="addToCart('Chicken McCrispy', 630)">Add to Cart</button><br><br>
-        <img src="chicken mccrispy.jpg">
+        <img src="chicken crispy.png">
     </div>
 
     <div class="card">
         Spicy McCrispy: Rs. 660
         <button onclick="addToCart('Spicy McCrispy', 660)">Add to Cart</button><br><br>
-        <img src="spicy mccrispy.webp">
+        <img src="mcCrispy.png">
     </div>
 
     <div class="card">
         McArabia Chicken: Rs. 720
         <button onclick="addToCart('McArabia Chicken', 720)">Add to Cart</button><br><br>
-        <img src="mc arabia chiken.webp">
+        <img src="MCArabia.png">
     </div>
 
     <div class="card">
         McArabia Beef: Rs. 760
         <button onclick="addToCart('McArabia Beef', 760)">Add to Cart</button><br><br>
-        <img src="mc arabia.jpg">
+        <img src="Arabia beef.png">
     </div>
 
     <div class="card">
         Chicken McNuggets (12 Pcs): Rs. 820
         <button onclick="addToCart('Chicken McNuggets 12 Pcs', 820)">Add to Cart</button><br><br>
-        <img src="nuggests 12.jpg">
+        <img src="12pc.png">
     </div>
 
     <div class="card">
         Chicken McNuggets (20 Pcs): Rs. 1350
         <button onclick="addToCart('Chicken McNuggets 20 Pcs', 1350)">Add to Cart</button><br><br>
-        <img src="nuggests 20.webp">
+        <img src="20pc.png">
     </div>
 
     <div class="card">
         Large Fries: Rs. 390
         <button onclick="addToCart('Large Fries', 390)">Add to Cart</button><br><br>
-        <img src="large fries.webp">
+        <img src="MCLarge.png">
     </div>
 
     <div class="card">
         Garlic Mayo Fries: Rs. 450
         <button onclick="addToCart('Garlic Mayo Fries', 450)">Add to Cart</button><br><br>
-        <img src="garlic mayo fries.webp">
+        <img src="Mayo.png">
     </div>
 
     <div class="card">
         Oreo McFlurry: Rs. 420
         <button onclick="addToCart('Oreo McFlurry', 420)">Add to Cart</button><br><br>
-        <img src="oreo mcflurry.webp">
+        <img src="Oreo.png">
     </div>
 
     <div class="card">
         Chocolate Shake: Rs. 360
         <button onclick="addToCart('Chocolate Shake', 360)">Add to Cart</button><br><br>
-        <img src="choclolate shake.webp">
+        <img src="shake.png">
     </div>
 
     <br>
@@ -145,6 +145,12 @@ function addToCart(name, price){
     alert(name + " added to cart!");
 }
 </script>
-
+<div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
+    <a href="checkout.html" style="text-decoration: none;">
+        <button style="padding: 12px 25px; background-color: #ff9800; color: white; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; box-shadow: 0px 4px 6px rgba(0,0,0,0.1);">
+            Proceed to Checkout 🛒
+        </button>
+    </a>
+</div>
 </body>
 </html>
